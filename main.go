@@ -1,11 +1,5 @@
 package main
 
-import (
-	"fmt"
-
-	"github.com/aj9mb/go-leetcode/leetcode"
-)
-
 func main() {
 	// fmt.Print(leetcode.MinWindow("ADOBECODEBANC", "ABC"))
 	// fmt.Print(leetcode.MaxSlidingWindow([]int{1, 3, -1, -3, 5, 3, 6, 7}, 3))
@@ -16,31 +10,34 @@ func main() {
 	// fmt.Print(leetcode.FindMedianSortedArrays([]int{}, []int{1}))
 	// fmt.Print(leetcode.GenerateParanthesis(1))
 
-	arrToLL := func(op []int) *leetcode.ListNode {
-		head := new(leetcode.ListNode)
+	// arrToLL := func(op []int) *leetcode.ListNode {
+	// 	head := new(leetcode.ListNode)
 
-		temp := head
+	// 	temp := head
 
-		for i, v := range op {
-			temp.Val = v
-			if i < len(op)-1 {
-				temp.Next = new(leetcode.ListNode)
-				temp = temp.Next
-			}
-		}
-		return head
-	}
+	// 	for i, v := range op {
+	// 		temp.Val = v
+	// 		if i < len(op)-1 {
+	// 			temp.Next = new(leetcode.ListNode)
+	// 			temp = temp.Next
+	// 		}
+	// 	}
+	// 	return head
+	// }
 
-	op1 := []int{1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1}
-	head1 := arrToLL(op1)
+	// op1 := []int{1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1}
+	// head1 := arrToLL(op1)
 
-	op2 := []int{5, 6, 4}
-	head2 := arrToLL(op2)
+	// op2 := []int{5, 6, 4}
+	// head2 := arrToLL(op2)
 
-	res := leetcode.AddTwoNumbers(head1, head2)
-	temp := res
-	for temp != nil {
-		fmt.Printf("%d, ", temp.Val)
-		temp = temp.Next
-	}
+	// res := leetcode.AddTwoNumbers(head1, head2)
+	// temp := res
+	// for temp != nil {
+	// 	fmt.Printf("%d, ", temp.Val)
+	// 	temp = temp.Next
+	// }
+
+	// fmt.Print(leetcode.FindDuplicate([]int{1, 3, 4, 2, 2}))
+
 }
