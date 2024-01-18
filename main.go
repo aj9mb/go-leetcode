@@ -1,5 +1,11 @@
 package main
 
+import (
+	"fmt"
+
+	"github.com/aj9mb/go-leetcode/leetcode"
+)
+
 func main() {
 	// fmt.Print(leetcode.MinWindow("ADOBECODEBANC", "ABC"))
 	// fmt.Print(leetcode.MaxSlidingWindow([]int{1, 3, -1, -3, 5, 3, 6, 7}, 3))
@@ -25,7 +31,7 @@ func main() {
 	// 	return head
 	// }
 
-	// op1 := []int{1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1}
+	// op1 := []int{1, 2, 3, 4, 5}
 	// head1 := arrToLL(op1)
 
 	// op2 := []int{5, 6, 4}
@@ -39,5 +45,16 @@ func main() {
 	// }
 
 	// fmt.Print(leetcode.FindDuplicate([]int{1, 3, 4, 2, 2}))
+
+	// res := leetcode.ReverseKGroup(head1, 2)
+	// temp := res
+	// for temp != nil {
+	// 	fmt.Printf("%d, ", temp.Val)
+	// 	temp = temp.Next
+	// }
+
+	root := &leetcode.TreeNode{Val: 3, Left: &leetcode.TreeNode{Val: 9}, Right: &leetcode.TreeNode{Val: 20, Left: &leetcode.TreeNode{Val: 15}, Right: &leetcode.TreeNode{Val: 7}}}
+
+	fmt.Print(leetcode.MaxDepthRecurDFS(root))
 
 }
