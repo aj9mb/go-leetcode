@@ -53,8 +53,9 @@ func main() {
 	// 	temp = temp.Next
 	// }
 
-	root := &leetcode.TreeNode{Val: 3, Left: &leetcode.TreeNode{Val: 9}, Right: &leetcode.TreeNode{Val: 20, Left: &leetcode.TreeNode{Val: 15}, Right: &leetcode.TreeNode{Val: 7}}}
+	// root := &leetcode.TreeNode{Val: 3, Left: &leetcode.TreeNode{Val: 9}, Right: &leetcode.TreeNode{Val: 20, Left: &leetcode.TreeNode{Val: 15}, Right: &leetcode.TreeNode{Val: 7}}}
 
-	fmt.Print(leetcode.MaxDepthRecurDFS(root))
+	root := &leetcode.TreeNode{}
+	fmt.Print(leetcode.IsBalanced(root))
 
 }

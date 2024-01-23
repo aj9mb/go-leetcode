@@ -101,28 +101,14 @@ func FindMedianSortedArrays1(nums1 []int, nums2 []int) float64 {
 		if Aleft <= Bright && Bleft <= Aright {
 			// odd
 			if total%2 == 1 {
-				return max(Aleft, Bleft)
+				return math.Max(Aleft, Bleft)
 			}
 			// even
-			return (max(Aleft, Bleft) + min(Aright, Bright)) / 2
+			return (math.Max(Aleft, Bleft) + math.Min(Aright, Bright)) / 2
 		} else if Aleft > Bright {
 			r = i - 1
 		} else {
 			l = i + 1
 		}
 	}
-}
-
-func max(a, b float64) float64 {
-	if a > b {
-		return a
-	}
-	return b
-}
-
-func min(a, b float64) float64 {
-	if a < b {
-		return a
-	}
-	return b
 }
