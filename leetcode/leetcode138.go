@@ -1,6 +1,6 @@
 package leetcode
 
-func copyRandomList(head *Node) *Node {
+func CopyRandomList(head *Node) *Node {
 	lookup := make(map[*Node]*Node)
 	temp := head
 	for temp != nil {

@@ -8,7 +8,7 @@ package leetcode
  * }
  */
 
-func reorderList(head *ListNode) {
+func ReorderList(head *ListNode) {
 	slow, fast := head, head.Next
 
 	for fast != nil && fast.Next != nil {

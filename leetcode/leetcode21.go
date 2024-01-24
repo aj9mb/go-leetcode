@@ -1,6 +1,6 @@
 package leetcode
 
-func mergeTwoLists(list1 *ListNode, list2 *ListNode) *ListNode {
+func MergeTwoLists(list1 *ListNode, list2 *ListNode) *ListNode {
 	dummy := ListNode{}
 	tail := &dummy
 	for list1 != nil && list2 != nil {

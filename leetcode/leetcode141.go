@@ -1,6 +1,6 @@
 package leetcode
 
-func hasCycle(head *ListNode) bool {
+func HasCycle(head *ListNode) bool {
 	fast := head
 	slow := head
 	for fast != nil && fast.Next != nil {

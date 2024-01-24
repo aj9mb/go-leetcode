@@ -32,25 +32,25 @@ func insert(lru *LRUCache, n *node) {
 	n.prev, n.next = prev, nxt
 }
 
-func (this *LRUCache) Get(key int) int {
-	if n, ok := this.cache[key]; ok {
+func (cache *LRUCache) Get(key int) int {
+	if n, ok := cache.cache[key]; ok {
 		remove(n)
-		insert(this, n)
+		insert(cache, n)
 		return n.value
 	}
 	return -1
 }
 
-func (this *LRUCache) Put(key int, value int) {
-	if n, ok := this.cache[key]; ok {
+func (cache *LRUCache) Put(key int, value int) {
+	if n, ok := cache.cache[key]; ok {
 		remove(n)
 	}
 	n := &node{key: key, value: value}
-	this.cache[key] = n
-	insert(this, n)
-	if len(this.cache) > this.cap {
-		delete(this.cache, this.left.next.key)
-		remove(this.left.next)
+	cache.cache[key] = n
+	insert(cache, n)
+	if len(cache.cache) > cache.cap {
+		delete(cache.cache, cache.left.next.key)
+		remove(cache.left.next)
 	}
 }
 

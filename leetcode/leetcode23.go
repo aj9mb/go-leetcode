@@ -7,8 +7,8 @@ package leetcode
  *     Next *ListNode
  * }
  */
-func mergeKLists(lists []*ListNode) *ListNode {
-	if lists == nil || len(lists) == 0 {
+func MergeKLists(lists []*ListNode) *ListNode {
+	if len(lists) == 0 {
 		return nil
 	}
 	for len(lists) > 1 {

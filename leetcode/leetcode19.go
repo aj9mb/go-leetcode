@@ -1,6 +1,6 @@
 package leetcode
 
-func removeNthFromEnd(head *ListNode, n int) *ListNode {
+func RmoveNthFromEnd(head *ListNode, n int) *ListNode {
 	dummy := &ListNode{Next: head, Val: 0}
 	left := dummy
 	right := head
