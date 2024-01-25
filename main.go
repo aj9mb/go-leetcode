@@ -56,6 +56,6 @@ func main() {
 	// root := &leetcode.TreeNode{Val: 3, Left: &leetcode.TreeNode{Val: 9}, Right: &leetcode.TreeNode{Val: 20, Left: &leetcode.TreeNode{Val: 15}, Right: &leetcode.TreeNode{Val: 7}}}
 
 	root := &leetcode.TreeNode{Val: 2, Left: &leetcode.TreeNode{Val: 1}, Right: &leetcode.TreeNode{Val: 3}}
-	fmt.Print(leetcode.IsValidBST(root))
+	fmt.Print(leetcode.KthSmallestIter(root, 3))
 
 }
