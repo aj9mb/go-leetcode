@@ -4,7 +4,7 @@ type TimeMap struct {
 	store map[string][]Value
 }
 
-func Constructor() TimeMap {
+func TimeMapConstructor() TimeMap {
 	return TimeMap{
 		store: make(map[string][]Value),
 	}
