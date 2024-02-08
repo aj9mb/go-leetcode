@@ -55,10 +55,11 @@ func main() {
 
 	// root := &leetcode.TreeNode{Val: 3, Left: &leetcode.TreeNode{Val: 9}, Right: &leetcode.TreeNode{Val: 20, Left: &leetcode.TreeNode{Val: 15}, Right: &leetcode.TreeNode{Val: 7}}}
 
-	root := &leetcode.TreeNode{Val: -10, Left: &leetcode.TreeNode{Val: 9}, Right: &leetcode.TreeNode{Val: 20, Left: &leetcode.TreeNode{Val: 15}, Right: &leetcode.TreeNode{Val: 7}}}
+	// root := &leetcode.TreeNode{Val: -10, Left: &leetcode.TreeNode{Val: 9}, Right: &leetcode.TreeNode{Val: 20, Left: &leetcode.TreeNode{Val: 15}, Right: &leetcode.TreeNode{Val: 7}}}
 	// root := &leetcode.TreeNode{Val: -3}
 	// fmt.Print(leetcode.MaxPathSum(root))
-	codec := leetcode.CodecConstructor()
-	fmt.Print(codec.Serialize(root))
+	// codec := leetcode.CodecConstructor()
+	// fmt.Print(codec.Serialize(root))
 
+	fmt.Print(leetcode.Subsets([]int{1, 2, 3}))
 }
